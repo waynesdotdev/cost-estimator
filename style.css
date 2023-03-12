@@ -120,3 +120,100 @@ h1 {
   line-height: 32px;
   margin: 16px 0 32px 0;
 }
+
+.slider {
+  width: 100%;
+  position: relative;
+}
+.slider .bar {
+  width: 100%;
+  height: 16px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 20px;
+}
+.progress {
+  width: 31%;
+  height: 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.point {
+  width: 24px;
+  height: 24px;
+  background-color: rgb(83, 49, 156);
+  border-radius: 50px;
+  position: absolute;
+  border: 2px solid white;
+  top: -5px;
+  left: 29%;
+  transition: 0.15s transform ease;
+}
+.slider .point:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.scale {
+  width: 100%;
+}
+.slider .scale ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(166, 166, 166);
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  background-color: rgb(250, 247, 255);
+  border-radius: 10px;
+  margin: 16px;
+  padding: 16px 32px;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: bold;
+  color: rgb(83, 49, 156);
+  text-transform: uppercase;
+}
+.card .top-section {
+  padding: 8px;
+}
+.card .top-section p {
+  margin: 4px 0;
+}
+.card .price {
+  font-size: 42px;
+  color: rgb(44, 44, 44);
+}
+.card hr {
+  width: 30%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 2px;
+}
+.card button {
+  border: none;
+  background-color: rgb(83, 49, 156);
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  transition: 0.15s transform ease;
+}
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
